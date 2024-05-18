@@ -3,6 +3,8 @@ type User {
   _id: ID!
   username: String!
   email: String!
+  password: String!
+  bookCount: Int!
   savedBooks: [Book]
 }
 
@@ -22,6 +24,7 @@ type Auth {
 
 type Query {
   me: User
+  searchBooks(query: String!): [Book]
 }
 
 type Mutation {
