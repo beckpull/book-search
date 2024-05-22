@@ -8,18 +8,24 @@ import { removeBookId } from '../utils/localStorage';
 
 const SavedBooks = () => {
   const [removeBook] = useMutation(DELETE_BOOK);
+
   const { loading, error, data } = useQuery(GET_ME);
 
-  // Ensure we access the correct field in the data
+  if (loading) return <p>Loading...</p>;
+  if (error) {
+    console.log('GraphQL error:', error.message);
+    return <p>Error: {error.message}</p>;
+  }
+
   const userData = data?.me || {};
+  console.log('User data:', userData);
 
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     if (!token) {
-      return false;
+      return false
     }
-
     try {
       await removeBook({
         variables: { bookId },
@@ -38,14 +44,6 @@ const SavedBooks = () => {
     }
   };
 
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
-
-  if (error) {
-    return <h2>Error: {error.message}</h2>;
-  }
-
   return (
     <>
       <div className="text-light bg-dark p-5">
@@ -55,12 +53,12 @@ const SavedBooks = () => {
       </div>
       <Container>
         <h2 className='pt-5'>
-          {userData.savedBooks?.length
+          {userData && userData.savedBooks && userData.savedBooks.length
             ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
         </h2>
         <Row>
-          {userData.savedBooks?.map((book) => (
+          {userData && userData.savedBooks && userData.savedBooks.map((book) => (
             <Col md="4" key={book.bookId}>
               <Card border='dark'>
                 {book.image && <Card.Img src={book.image} alt={`The cover for ${book.title}`} variant='top' />}

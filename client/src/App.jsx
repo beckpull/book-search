@@ -11,13 +11,15 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: '/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
+  // console.log(headers);
   // get the authentication token from local storage if it exists
   const token = localStorage.getItem('id_token');
   // return the headers to the context so httpLink can read them
+  console.log(`AppJSX: ${token}`);
   return {
     headers: {
       ...headers,
