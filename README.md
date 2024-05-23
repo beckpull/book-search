@@ -161,17 +161,17 @@ _To get a local copy up and running follow these simple example steps:_
     </br>
     </br>
     <a href="https://book-search-evj9.onrender.com/">
-    <p>Landing Page, Search Books, Save Book</p>
-      <img src="./readme-imgs/landing.png" width="236">
-      <img src="./readme-imgs/search.png" width="200">
-      <img src="./readme-imgs/save.png" width="203">
+    <p>Search Books, Save Book</p>
+      <!-- <img src="./readme-imgs/landing.png" width="356"> -->
+      <img src="./readme-imgs/search.png" width="650">
+      <img src="./readme-imgs/save.png" width="204">
     </a>
     </br></br>
     <a href="https://book-search-evj9.onrender.com/">
-      <p>Login, Signup, See My Books</p>
-      <img src="./readme-imgs/login.png" width="264">
-      <img src="./readme-imgs/signup.png" width="267">
-      <img src="./readme-imgs/my-books.png" width="239">
+      <p>Signup, See My Books</p>
+      <!-- <img src="./readme-imgs/login.png" width="524"> -->
+      <img src="./readme-imgs/signup.png" width="487">
+      <img src="./readme-imgs/my-books.png" width="339">
     </a>
     </br></br>
   </br></br>
@@ -180,14 +180,14 @@ _To get a local copy up and running follow these simple example steps:_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
-
+<!-- 
 ## Roadmap
 
 <img src="./readme-imgs/roadmap.png">
 <div align="right">
   <p><i>This was my roadmap for this project</i></p>
 </div>
-</br>
+</br> -->
 
 <!-- AS AN avid reader
 I WANT to search for new books to read
