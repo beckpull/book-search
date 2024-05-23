@@ -120,9 +120,9 @@ _This application has several dependencies, to install individually onto your ma
 #   npm i nodemon --save-dev
 ``` -->
 
-<img src="./readme-imgs/maindev.png" alt="root directory dependencies">
-<img src="./readme-imgs/serverdev.png" alt="server directory dependencies">
-<img src="./readme-imgs/clientdev.png" alt="client directory dependencies">
+<img src="./readme-imgs/maindev.png" alt="root directory dependencies" width="260">
+<img src="./readme-imgs/serverdev.png" alt="server directory dependencies" width="230">
+<img src="./readme-imgs/clientdev.png" alt="client directory dependencies" width="230">
 
 ### Installation
 
