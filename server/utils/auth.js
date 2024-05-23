@@ -14,6 +14,7 @@ module.exports = {
   }),
   // function for our authenticated routes
   authMiddleware: function ({ req }) {
+    // console.log(req);
     // console.log('Middleware hit');
     // console.log('Headers:', JSON.stringify(req.headers, null, 2));
     // console.log('Query:', JSON.stringify(req.query, null, 2));

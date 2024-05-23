@@ -77,7 +77,7 @@ const SearchBooks = () => {
 
     try {
       const { data } = await saveBook({
-        variables: { bookData: bookToSave },
+        variables: { bookData: { ...bookToSave } },
       });
 
       if (data) {
