@@ -63,9 +63,13 @@
 
 ## About The Project
 
+The project initially started with a traditional Express setup using an MVC (Model-View-Controller) structure. The routes and controllers managed RESTful API endpoints for user authentication and book search functionalities. While this setup was functional, I aimed for a more flexible and efficient solution to handle complex data fetching requirements.
+
+I transitioned the application to utilize Apollo Server and GraphQL, which significantly enhanced the efficiency and flexibility of data fetching. Apollo Server was configured to handle GraphQL requests, and the schema was meticulously defined using typeDefs and resolvers.
+
 ### Overview:
 
-
+This application not only provides a seamless user experience for searching books but also integrates user authentication and personalized book saving features. The project showcases my expertise in leveraging cutting-edge technologies such as MongoDB, Apollo Client, Apollo Server, GraphQL, JWT tokens, and custom authentication middleware. By transitioning from a standard Express application with controllers and routes to a sophisticated Apollo-based architecture, I ensured a more efficient and scalable solution.
 
 ### Key Features:
 
@@ -78,13 +82,14 @@
 
 ### Technologies Used:
 
-- **Frontend**: React.js, Apollo Client/GraphQL, 
-- **Backend**: MongoDB, Mongoose, Apollo Server/GraphQL,
+- **Frontend**: React.js, Apollo Client, GraphQL
+- **Backend**: MongoDB, Mongoose, Apollo Server, GraphQL, Node.js, Express
+- **Authentication**: JWT tokens, jwt-decode, custom authentication middleware
 - **Deployment**: Render
 
 ### Goals:
 
-The primary goal of the React book-search project is to create a professional and visually appealing platform to showcase my work and skills to potential employers, clients, and collaborators. It aims to demonstrate my proficiency in web development while providing an interactive and informative experience for visitors.
+The primary goal of this project was to create a professional and visually appealing platform that demonstrates my proficiency in modern web development. By leveraging Apollo Client and Server, GraphQL, MongoDB, and JWT authentication, I ensured that the application is both scalable and efficient. This project serves as a testament to my ability to convert a standard Express application into a sophisticated, modern web application with enhanced functionality and user experience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,12 +113,16 @@ The primary goal of the React book-search project is to create a professional an
 
 _This application has several dependencies, to install individually onto your machine, navigate to the directory this code lives in and type these commands into your Terminal / Git Bash:_
 
-```sh
-   npm i express
-   npm i mongodb
-   npm i mongoose
-   npm i nodemon --save-dev
-```
+<!-- ```sh
+#   npm i express
+#   npm i mongodb
+#   npm i mongoose
+#   npm i nodemon --save-dev
+``` -->
+
+<img src="./readme-imgs/maindev.png" alt="root directory dependencies">
+<img src="./readme-imgs/serverdev.png" alt="server directory dependencies">
+<img src="./readme-imgs/clientdev.png" alt="client directory dependencies">
 
 ### Installation
 
@@ -126,11 +135,11 @@ _To get a local copy up and running follow these simple example steps:_
    ```
 2. Install all necessary NPM packages
    ```sh
-   npm i && npm run start:dev
+   npm i && npm run build
    ```
 3. Node `server.js`
    ```sh
-   npm start
+   npm start 
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
