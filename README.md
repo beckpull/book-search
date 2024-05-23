@@ -180,14 +180,14 @@ _To get a local copy up and running follow these simple example steps:_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
-<!-- 
+
 ## Roadmap
 
 <img src="./readme-imgs/roadmap.png">
 <div align="right">
   <p><i>This was my roadmap for this project</i></p>
 </div>
-</br> -->
+</br>
 
 <!-- AS AN avid reader
 I WANT to search for new books to read
